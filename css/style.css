@@ -8,8 +8,8 @@ body{
     margin: 0;
     line-height: 1.5;
     font-size:16px;
-    font-weight:400 ;
-    background-color: rgba(0,0,0,0.9);
+    font-weight:400;
+    background-color: black;
 }
 
 *:not(i){
@@ -245,19 +245,20 @@ footer{
 
 
 /*Love Notes section*/
-.lovenotes-section .event-item{
+.lovenotes-section .love-note{
     display: flex;
     flex-wrap: wrap;
 }
 
-.lovenotes-section .event-item-inner{
+.lovenotes-section .love-note-inner{
     padding: 30px;
     box-shadow: 0 0 10px #888888;
     max-width: 33%;
     position: relative;
+    margin-bottom: 20px;
 }
 
-.lovenotes-section .event-item-inner:before{
+.lovenotes-section .love-note-inner:before{
     content: '';
     position: absolute;
     left: 15px;
@@ -273,7 +274,7 @@ footer{
     padding: 5px 10px;
 }
 @media screen and (max-width: 800px) {
-    .lovenotes-section .event-item-inner{
+    .lovenotes-section .love-note-inner{
         padding: 40px;
         box-shadow: 0 0 10px #888888;
         max-width: 50%;
@@ -281,7 +282,7 @@ footer{
     }
 }
 @media screen and (max-width: 600px) {
-     .lovenotes-section .event-item-inner{
+     .lovenotes-section .love-note-inner{
         padding: 50px;
         box-shadow: 0 0 2px #888888;
         max-width: 100%;

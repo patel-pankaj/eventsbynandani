@@ -1,0 +1,52 @@
+// Activates slideshow on Home page 
+$(window).on('load',function(){
+    //Reset all sections
+    $("section").hide();
+    $(".home-section").show();
+    
+    //home section slideshow
+    let slideIndex = $(".slide.active").index();
+    const slideLen = $(".slide").length
+    function slideshow(){
+        $(".slide").removeClass("active").eq(slideIndex).addClass("active");
+        if(slideIndex == slideLen-1){
+            slideIndex = 0;
+        }
+        else{
+            slideIndex++;
+        }
+        setTimeout(slideshow,5000)
+    }
+    slideshow()
+})
+
+$(document).ready(function(){
+    $(".header .nav ul li a").click(function(){
+        // Update active navigation item style on click
+        $(".header .nav ul li a").removeClass("active");
+        $(".header .nav ul li a").removeClass("glow");
+        $(".header .nav ul li a").addClass("glow");
+        $(this).addClass("active");
+
+        // Update hamburger responsive navigation item style on click
+        $(".header").removeAttr('style');
+        $('#topnav').removeClass("responsiveNav");
+
+        // Show/Hide only active section content
+        $("section").hide();
+        var sectionClass = $(this).attr("data");
+        $("."+sectionClass).show();
+    })    
+
+    //Make navigation items responsive
+    $(".header .hamburger").click(function(){
+        $(".header").removeAttr('style');
+        var topnav = $('#topnav');
+        if(topnav.hasClass("responsiveNav")) {
+            topnav.removeClass("responsiveNav");
+        } else {
+            $(".header").css("background-color", "black");
+            topnav.addClass("responsiveNav");
+        }
+    })
+})

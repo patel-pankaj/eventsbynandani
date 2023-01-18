@@ -243,7 +243,6 @@ footer{
     margin: 0 0 15px;
 }
 
-
 /*Love Notes section*/
 .lovenotes-section .love-note{
     display: flex;
@@ -253,9 +252,9 @@ footer{
 .lovenotes-section .love-note-inner{
     padding: 30px;
     box-shadow: 0 0 10px #888888;
-    max-width: 33%;
+    max-width: 32%;
     position: relative;
-    margin-bottom: 20px;
+    margin: 0.66%;
 }
 
 .lovenotes-section .love-note-inner:before{
@@ -275,17 +274,57 @@ footer{
 }
 @media screen and (max-width: 800px) {
     .lovenotes-section .love-note-inner{
-        padding: 40px;
-        box-shadow: 0 0 10px #888888;
-        max-width: 50%;
-        position: relative;
+        max-width: 46%;
+        margin: 1%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
      .lovenotes-section .love-note-inner{
-        padding: 50px;
-        box-shadow: 0 0 2px #888888;
-        max-width: 100%;
-        position: relative;
+        max-width: 98%;
+        margin: 2%;
+    }
+}
+
+/*Portfolio section*/
+.portfolio-section .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.portfolio-section .gallery-inner{
+    padding: 30px;
+    box-shadow: 0 0 10px #888888;
+    border-radius: 25px;
+    max-width: 32%;
+    position: relative;
+    margin: 0.66%;
+}
+
+.portfolio-section .gallery-inner:before{
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid #ffa5dc;
+    border-radius: 10px;
+    z-index: -1;
+}
+.portfolio-section .section-content i{
+    font-size:20px;
+    color: #ffa5dc;
+    padding: 5px 10px;
+}
+@media screen and (max-width: 800px) {
+    .portfolio-section .gallery-inner{
+        max-width: 46%;
+    }
+}
+@media screen and (max-width: 450px) {
+     .portfolio-section .gallery-inner{
+        max-width: 98%;
+        margin: 2%;
     }
 }

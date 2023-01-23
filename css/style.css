@@ -197,6 +197,9 @@ footer{
 }
 
 /* home section*/
+.home-section .section-content{
+    margin-top: 10px;
+}
 .home-section .slide{
     background-position: center;
     background-size:cover ;
@@ -204,8 +207,7 @@ footer{
     z-index: 1;
     top: 0;
     left: 0;
-    width: 100% ;
-    height: 100%;
+    width: 100%;
     opacity: 0;
     visibility: hidden;
     transition: all 1s ease-in-out;
@@ -223,6 +225,12 @@ footer{
     height: 100%;
     background-color: rgba(0,0,0,0.7);
     z-index: -1;
+}
+
+@media screen and (max-width: 450px) {
+    .home-section .section-content img{
+        display: none;
+    }
 }
 
 /* contact section*/
@@ -247,6 +255,14 @@ footer{
 .lovenotes-section .love-note{
     display: flex;
     flex-wrap: wrap;
+}
+
+.love-note-inner .glow a{
+    color: #d6e7f1;
+}
+
+.love-note-inner .more-content {
+    display: none;
 }
 
 .lovenotes-section .love-note-inner{
@@ -327,4 +343,36 @@ footer{
         max-width: 98%;
         margin: 2%;
     }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  padding-top: 100PX;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: black;
+  color: #d6e7f1;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ffa5dc;
+  box-shadow: 0 0 50px #888888;
+  border-radius: 10px;
+  width: 85%;
+}
+
+/* The Close Button */
+.modal-close {
+  float: right;
+  font-size: 20px;
 }

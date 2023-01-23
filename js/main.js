@@ -49,4 +49,35 @@ $(document).ready(function(){
             topnav.addClass("responsiveNav");
         }
     })
+
+
+    // When the user clicks on read more, open the modal 
+    var readmodeTag; 
+    $(".readmore").click(function(){
+        readmodeTag = $(this);
+        $(readmodeTag).text("");
+        var modalText = $(readmodeTag).parent().text();
+        $(".lovenotes-section, .header").fadeOut();
+        $("#modal-text").text(modalText);
+        $(".modal").show();
+        
+    })
+    
+    // When the user clicks on close, close the modal 
+    $(".fa-times-circle").click(function(){
+        $(readmodeTag).text("...read more");
+        $(".modal").hide();
+        $(".lovenotes-section, .header").fadeIn();
+        $(readmodeTag).focus();
+    })
+
+    // When the user clicks anywhere outside of the modal, close the model
+    $(window).click(function(e){
+      if (e.target.id == "modal-div") {
+        $(".modal").hide();
+        $(readmodeTag).text("...read more");
+        $(".lovenotes-section, .header").fadeIn();
+        $(readmodeTag).focus();
+      }
+    })
 })

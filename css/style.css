@@ -345,6 +345,59 @@ footer{
     }
 }
 
+/*About us section*/
+.aboutus-section .aboutus-item{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 20px;
+    position: relative;
+}
+
+.aboutus-section .aboutus-item-text {
+    flex: 0 0 65%;
+    max-width: 65%;
+    text-align: left;
+}
+
+.aboutus-section .aboutus-item-img{
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+
+.aboutus-section .aboutus-item-text h3{
+    font-size: 25px;
+    margin: 0 0 8px;
+    color: #d6e7f1;
+    text-transform: capitalize;
+    text-decoration: underline #ffa5dc;
+}
+@media screen and (max-width: 1000px) {
+    .aboutus-section .aboutus-item{
+        margin: 0px;
+    }
+    .aboutus-section .aboutus-item-img{
+        padding: 10px;
+    }
+    .aboutus-section .aboutus-item-text {
+        padding-bottom: 20px;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .aboutus-section .aboutus-item{
+        display: contents;
+    }
+    .aboutus-section .aboutus-item-img{
+        max-width: 100%;
+        text-align: center;
+    }
+    .aboutus-section .aboutus-item-text {
+        max-width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+    }    
+}
 
 /* The Modal (background) */
 .modal {

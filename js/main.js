@@ -15,7 +15,7 @@ $(window).on('load',function(){
         else{
             slideIndex++;
         }
-        setTimeout(slideshow,5000)
+        setTimeout(slideshow,2500)
     }
     slideshow()
 })

@@ -286,9 +286,9 @@ footer{
     z-index: -1;
 }
 .lovenotes-section .section-content i{
-    font-size:20px;
+    font-size:15px;
     color: #ffa5dc;
-    padding: 5px 10px;
+    padding: 5px 5px;
 }
 @media screen and (max-width: 800px) {
     .lovenotes-section .love-note-inner{

@@ -186,7 +186,9 @@ footer{
     color: #d6e7f1;
     margin: 0 0 15px;
     text-decoration: underline #ffa5dc;
+    -webkit-text-decoration:  underline #ffa5dc;
     text-decoration-thickness: 3px;
+    -webkit-text-decoration-thickness: 3px;
     text-underline-offset: 8px;
     font-weight: normal;
     font-family: 'Clicker Script';
@@ -367,6 +369,7 @@ footer{
     font-size: 20px;
     margin: 0 0 5px;
     text-decoration: underline #ffa5dc;
+    -webkit-text-decoration: underline #ffa5dc;
     text-underline-offset: 8px;
 }
 .services-section .services-item-text ul{
@@ -408,6 +411,7 @@ footer{
     color: #d6e7f1;
     text-transform: capitalize;
     text-decoration: underline #ffa5dc;
+    -webkit-text-decoration: underline #ffa5dc;
 }
 @media screen and (max-width: 1000px) {
     .aboutus-section .aboutus-item{

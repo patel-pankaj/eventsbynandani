@@ -229,7 +229,7 @@ footer{
     z-index: -1;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .home-section .section-content img{
         display: none;
     }

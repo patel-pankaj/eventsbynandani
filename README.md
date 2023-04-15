@@ -1,12 +1,11 @@
 # eventsbynandani.com Deployment steps:
-1. Login to GCP Console using `mailtopankaj@gmail.com` account.
-2. Open Cloud Shell Editor
-3. Set Cloud Platform project for the session to EventsByNandani using `gcloud config set project static-sum-374218` command and authorize it.
-4. Root directory for EventsByNandani site is `/home/mailtopankaj/EventsByNandani/WWW`
-5. Go to directory of the file(s) being changed. Remove older version of file(s).
-6. Upload newer version of file(s) using Upload menu. On Upload window please select new file and respective directory of the file.
-7. Goto `/home/mailtopankaj/EventsByNandani/WWW` directory where `app.yaml` file is located
-8. Deploy latest app code using `gcloud app deploy` command. Hit Continue and wait for process to complete.
-9. New code is deployed now. Please test it by visting `https://www.eventsbynandani.com/`
-10. Goto versions tab using `https://console.cloud.google.com/appengine/versions?project=static-sum-374218&serviceId=default` and delete older version of application.
-
+1. Login to [**Github account**](https://github.com/patel-pankaj) using username and password.
+2. Go to **eventsbynandani** repositery [settings page](https://github.com/patel-pankaj/eventsbynandani/settings).
+3. Go to **Github Pages** by clicking on [Pages secion](https://github.com/patel-pankaj/eventsbynandani/settings/pages) in the Code and automation section of the sidebar.
+4. On the Github Pages: 
+    1. Under Build and deployment, under **Source**, make sure ***Deploy from a branch*** is selected.
+    2. Under Build and deployment, under **Branch**, make sure ***master*** and ***root*** are selected.
+    3. Under Custom domain, make sure ***eventsbynandani.com*** is saved.
+        1. Make sure Custom domain is verified otherwise visit GoDaddy account and update DNS record.
+    4. Under Custom domain, make sure ***Enforce HTTPS*** is checked.
+5. visit [www.eventsbynandani.com](https://eventsbynandani.com/) and make sure everything looks good.
